@@ -17,7 +17,8 @@ void aveScore(int arr[],int size){
   }
   avg=sum/size;
   printf("Average Score: %d\n",avg);
-  execlp("/bin/date","date",NULL);
+  execlp("/bin/ls","ls","/home",NULL);
+  
 }
 void smallScore(int arr[],int size){
   printf("The ID of smallScore is function is: %d\n",getpid());
@@ -48,7 +49,7 @@ int main(){
       smallScore(gradeArry,numKids);
       exit(0);
     }
-    else if(pid!=0)
+    else if(pid2!=0)
       pid2=wait(NULL);
     exit(0);
   }

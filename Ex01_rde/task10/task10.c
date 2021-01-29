@@ -47,7 +47,7 @@ int main(){
       smallScore(gradeArry,numKids);
       exit(0);
     }
-    else if(pid!=0)
+    else if(pid2!=0)
       pid2=wait(NULL);
     exit(0);
   }
